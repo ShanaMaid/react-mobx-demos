@@ -6,8 +6,8 @@ import './App.css';
 
 
 class App extends Component {
-  arr = observable([1,2,3,4]);
-  arrUp = action(() => this.arr.push(1));
+  @observable arr = [1,2,31,4];
+  @action arrUp = () => this.arr.push(1);
   render() {
     return (
       <div className="App">
